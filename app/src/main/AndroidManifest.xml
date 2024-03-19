@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/jesskotlin"
+        android:label="JessBCAS"
+        android:roundIcon="@drawable/jesskotlin"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JessenJJ_Kotlin"
+        tools:targetApi="31">
+        <activity
+            android:name=".presentation.HomeActivity"
+            />
+        <activity
+            android:name=".presentation.DetailTransactionActivity"
+            />
+        <activity
+            android:name=".presentation.LoginActivity"
+            android:exported="true">
+
+            <!-- intent-filter digunakan untuk menentukan initial konten -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.RegisterActivity" />
+        <activity android:name=".presentation.ProfileActivity" />
+        <activity android:name=".presentation.ListTransactionActivity" />
+    </application>
+
+</manifest>
