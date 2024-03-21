@@ -39,8 +39,8 @@ class DashboardMenuAdapter
             bindingView = layoutInflater?.inflate(R.layout.item_menu_dashboard, null)
         }
 
-        image = bindingView?.findViewById(R.id.ivLogoBCAS)
-        textMenu = bindingView?.findViewById(R.id.tvTransferType)
+        image = bindingView?.findViewById(R.id.ivMenu)
+        textMenu = bindingView?.findViewById(R.id.tvMenu)
 
 
         //ini fungsinya untuk mendapatkan data dari list berdasarkan position

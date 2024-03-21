@@ -80,27 +80,27 @@ class DashboardFragment : BaseFragment<FragmentDashboardBinding>() {
                 menuName = "Transfer",
             ),
             MenuDashboardModel(
-                image = R.drawable.baseline_message_24,
+                image = R.drawable.baseline_shopping_cart_24,
                 menuName = "Pembelian",
             ),
             MenuDashboardModel(
-                image = R.drawable.baseline_message_24,
+                image = R.drawable.baseline_payment_24,
                 menuName = "Pembayaran",
             ),
             MenuDashboardModel(
-                image = R.drawable.baseline_message_24,
+                image = R.drawable.baseline_payments_24,
                 menuName = "Cardless",
             ),
             MenuDashboardModel(
-                image = R.drawable.baseline_message_24,
+                image = R.drawable.baseline_history_24,
                 menuName = "History Pembayaran",
             ),
             MenuDashboardModel(
-                image = R.drawable.baseline_message_24,
+                image = R.drawable.baseline_currency_exchange_24,
                 menuName = "Mutasi Rekening",
             ),
             MenuDashboardModel(
-                image = R.drawable.baseline_message_24,
+                image = R.drawable.baseline_access_time_24,
                 menuName = "Jadwal Sholat",
             ),
 
