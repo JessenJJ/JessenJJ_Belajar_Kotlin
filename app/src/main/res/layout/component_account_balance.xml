@@ -8,10 +8,12 @@
 
     <TextView
         android:id="@+id/tvRekeningku"
+        android:text="Rekeningku (Saldo Efektif)"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rekeningku (Saldo Efektif)"
-        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -20,10 +22,10 @@
         android:id="@+id/tvLihatSemua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:gravity="end"
         android:text="Lihat Semua"
-        app:layout_constraintStart_toEndOf="@id/tvRekeningku"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 

@@ -1,0 +1,66 @@
+//Json yang berbentuk atau bertipe objek
+{
+  "user_name": "Jessen",
+  "user_address": "Cawang",
+  "user_email": "jess@gmail.com",
+  "user_academic": {
+    "user_university": "Tarumanagara University",
+    "user_middle_school": "Santa Maria"
+  }
+}
+
+//Json yang berbentuk atau bertipe array
+[
+  "budi",
+  "sinta",
+  "tarjo"
+]
+
+List<User>
+
+{
+  "data": [
+    "budi",
+    "sinta,
+    "tarjo",
+  ]
+}
+
+data class User(
+@Seriliazable("data")
+val name: String
+)
+
+//list of object
+{
+"username":[
+    {
+    "id": 123
+    "name": "affan"
+    }
+    {
+    "id": 123
+    "name": "affan"
+    }
+    {
+    "id": 123
+    "name": "affan"
+    }
+    {
+    "id": 123
+    "name":"affan"
+    }
+  ]
+}
+
+data class UserProfile(
+@Serializable("username")
+val userName: List<UserData>
+)
+
+data class UserData(
+@Serializable("id")
+val userId:Int,
+@Serializable("name")
+val userName:String,
+)

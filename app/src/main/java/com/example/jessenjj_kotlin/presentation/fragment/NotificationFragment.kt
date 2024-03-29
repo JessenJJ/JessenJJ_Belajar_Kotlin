@@ -4,7 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.example.jessenjj_kotlin.base.BaseFragment
 import com.example.jessenjj_kotlin.databinding.FragmentNotificationBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class NotificationFragment : BaseFragment<FragmentNotificationBinding>(){
     override fun inflateBinding(
         inflater: LayoutInflater,

@@ -11,8 +11,9 @@ import com.example.jessenjj_kotlin.databinding.FragmentAdminBinding
 import com.example.jessenjj_kotlin.databinding.FragmentDashboardBinding
 import com.example.jessenjj_kotlin.databinding.FragmentInboxBinding
 import com.example.jessenjj_kotlin.model.TransactionInboxModel
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class InboxFragment : Fragment(){
     private var _binding: FragmentInboxBinding? = null
     private val binding get() = _binding!!

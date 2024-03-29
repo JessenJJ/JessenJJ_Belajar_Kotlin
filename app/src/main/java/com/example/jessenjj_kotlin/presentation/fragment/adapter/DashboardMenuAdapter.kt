@@ -8,11 +8,12 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.jessenjj_kotlin.R
+import com.example.jessenjj_kotlin.model.MenuDashboard
 import com.example.jessenjj_kotlin.model.MenuDashboardModel
 
 
-class DashboardMenuAdapter
-    (private val context: Context, private val menuData: List<MenuDashboardModel>) : BaseAdapter() {
+class DashboardMenuAdapter(
+    private val menuData: List<MenuDashboard>, private val context: Context) : BaseAdapter() {
     private var image: ImageView? = null
     private var textMenu: TextView? = null
     private var layoutInflater: LayoutInflater? = null
@@ -32,9 +33,9 @@ class DashboardMenuAdapter
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View? {
         var bindingView = convertView
         if (layoutInflater == null) {
-            layoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)
-                    as LayoutInflater
+            layoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         }
+
         if (bindingView == null) {
             bindingView = layoutInflater?.inflate(R.layout.item_menu_dashboard, null)
         }
@@ -42,15 +43,15 @@ class DashboardMenuAdapter
         image = bindingView?.findViewById(R.id.ivMenu)
         textMenu = bindingView?.findViewById(R.id.tvMenu)
 
-
-        //ini fungsinya untuk mendapatkan data dari list berdasarkan position
+        // untuk mendapatkan data dari list berdasarkan posisi
         val resultMenu = menuData[position]
 
-        //melakukan sett pada masing2 component di layout
-        image?.setImageResource(resultMenu.image)
-        textMenu?.text = resultMenu.menuName
+        // melakukan set data image dan textview
+        // image?.setImageResource(resultMenu.image)
+        textMenu?.text = resultMenu.nameMenu
 
         return bindingView
     }
+
 
 }

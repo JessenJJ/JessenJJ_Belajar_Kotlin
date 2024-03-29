@@ -12,7 +12,9 @@ import com.example.jessenjj_kotlin.presentation.fragment.MessageFragment
 import com.example.jessenjj_kotlin.utils.ConfirmationDialogueUtils
 import com.example.jessenjj_kotlin.utils.SharePrefHelper
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
 

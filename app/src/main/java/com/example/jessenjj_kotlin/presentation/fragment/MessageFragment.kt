@@ -6,8 +6,9 @@ import com.example.jessenjj_kotlin.adapter.MessageTabAdapter
 import com.example.jessenjj_kotlin.base.BaseFragment
 import com.example.jessenjj_kotlin.databinding.FragmentMessageBinding
 import com.google.android.material.tabs.TabLayoutMediator
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MessageFragment : BaseFragment<FragmentMessageBinding>() {
 
     private var adapterMessage : MessageTabAdapter? = null

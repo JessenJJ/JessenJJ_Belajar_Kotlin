@@ -25,11 +25,15 @@
                 android:id="@+id/componentMenu"
                 layout="@layout/fragment_menu_dashboard"
                 android:layout_width="match_parent"
-                android:layout_height="240dp"/>
+                android:layout_height="240dp" />
 
             <include
                 android:id="@+id/componentAccount"
                 layout="@layout/component_account_balance" />
+            <include
+                android:id="@+id/componentPromo"
+                layout="@layout/component_promo_dashboard"
+                />
 
         </LinearLayout>
 

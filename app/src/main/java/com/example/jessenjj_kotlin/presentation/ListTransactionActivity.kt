@@ -9,7 +9,9 @@ import com.example.jessenjj_kotlin.adapter.ListTransactionAdapter
 import com.example.jessenjj_kotlin.databinding.ActivityListTransactionBinding
 import com.example.jessenjj_kotlin.databinding.ActivityLoginBinding
 import com.example.jessenjj_kotlin.model.TransactionModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ListTransactionActivity : AppCompatActivity() {
     private lateinit var binding: ActivityListTransactionBinding
 

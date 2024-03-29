@@ -6,7 +6,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.jessenjj_kotlin.R
 import com.example.jessenjj_kotlin.databinding.ActivityRegisterBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class RegisterActivity : AppCompatActivity() {
 
 

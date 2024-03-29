@@ -7,9 +7,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.jessenjj_kotlin.databinding.ActivityLoginBinding
 import com.example.jessenjj_kotlin.utils.SharePrefHelper
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.UUID
 
-
+@AndroidEntryPoint
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding

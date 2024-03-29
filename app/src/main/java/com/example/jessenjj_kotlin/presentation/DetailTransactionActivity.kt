@@ -7,7 +7,9 @@ import com.example.jessenjj_kotlin.databinding.ActivityDetailTransactionBinding
 import com.example.jessenjj_kotlin.databinding.ActivityRegisterBinding
 import com.example.jessenjj_kotlin.model.TransactionModel
 import com.example.jessenjj_kotlin.presentation.ListTransactionActivity.Companion.TRANSACTION_KEY
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DetailTransactionActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailTransactionBinding
